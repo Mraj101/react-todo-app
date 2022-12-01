@@ -1,6 +1,7 @@
 import React from 'react'
 import Todos from './Todos'
 
+import style from './home.module.css'
 
 const dummyTodo = [
     {
@@ -17,7 +18,9 @@ const dummyTodo = [
 ]
 const Home = () => {
   return (
-      <Todos todos={dummyTodo} />
+    <div className={style.container}>
+        <Todos todos={dummyTodo} />
+    </div>
   )
 }
 
