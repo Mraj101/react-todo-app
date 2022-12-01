@@ -1,3 +1,5 @@
+/* ///utility */
+
 
 
 .container{
@@ -8,4 +10,13 @@
     width: 65vw;
     height: 80vh;
     border: 2px solid red;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    padding: 30px;
+}
+.container-child1{
+    background-color: black;
+    padding: 20px;
+    line-height: 1.5;
+    border-radius: 20px;
 }

@@ -10,16 +10,13 @@ const dummyTodo = [
         desc:"This is description for title 1"
     },
 
-    {
-        id:2,
-        title:"Title2",
-        desc:"This is description for title 2"
-    }
 ]
 const Home = () => {
   return (
-    <div className={style.container}>
-        <Todos todos={dummyTodo} />
+    <div className={`${style.container}`}>
+        <div className={style["container-child1"]}>
+          <Todos todos={dummyTodo} />
+        </div>
     </div>
   )
 }
