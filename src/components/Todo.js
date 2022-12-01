@@ -1,10 +1,13 @@
 import React from 'react'
 
+import NewTodo from './NewTodo'
+
 const Todo = (props) => {
-    const {id,title,desc}=props.todo
+    const {id,title,desc} = props.todo
   return (
     <div>
-        
+        {title} <br />
+        {desc} <br />
     </div>
   )
 }
