@@ -2,6 +2,7 @@ import React from 'react'
 import Todos from './Todos'
 
 import style from './home.module.css'
+import NewTodo from './NewTodo'
 
 const dummyTodo = [
     {
@@ -9,14 +10,18 @@ const dummyTodo = [
         title:"Title1",
         desc:"This is description for title 1"
     },
+      {
+        id:2,
+        title:"Title2",
+        desc:"This is description for title 2"
+    },
 
 ]
 const Home = () => {
   return (
     <div className={`${style.container}`}>
-        <div className={style["container-child1"]}>
-          <Todos todos={dummyTodo} />
-        </div>
+         
+          <Todos todos={dummyTodo} />     
     </div>
   )
 }
