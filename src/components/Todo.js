@@ -7,7 +7,7 @@ import style from './todo.module.css'
 const Todo = (props) => {
     const {title,desc} = props.todo
   return (
-    <article className={style["container-todos"]}>
+    <article className={style["container-todo"]}>
       <div>
         <h3>
           {title}

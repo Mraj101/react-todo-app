@@ -17,11 +17,15 @@
     font-size: 30px;
     background-image:linear-gradient(45deg,rgba(63, 21, 75, 0.479),rgba(212, 183, 55, 0.37));
     box-shadow: 0px -1px 10px goldenrod;
+    flex-wrap: wrap;
 }
 
 .form-container .form-group{
     padding: 5px;
     width: 100%;
+}
+.form-container .form-group form-div2{
+    flex-shrink: 5;
 }
 .form-container .form-group input{
     margin-left: 20px;
@@ -32,9 +36,8 @@
 }
 .form-container .form-group textarea{
     height:100px;
-    width: 300px;
     font-size: 20px;
-
+    flex-shrink: 50%;
 }
 .form-container  button{
     width: 100px;

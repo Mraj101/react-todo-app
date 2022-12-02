@@ -19,9 +19,12 @@ const dummyTodo = [
 ]
 const Home = () => {
   return (
-    <div className={`${style.container}`}>
-         
-          <Todos todos={dummyTodo} />     
+    <div>
+           <NewTodo onNewTodo={newTodo} />
+          <div className={`${style.container}`}>
+                <Todos todos={dummyTodo} />     
+          </div>
+
     </div>
   )
 }
