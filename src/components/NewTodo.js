@@ -1,17 +1,14 @@
 import React,{useState} from 'react'
 
 import style from './form.module.css'
+
+
+
+
 const NewTodo = (props) => {
   const[todo,setTodo]=useState({title:'',description:''})
-
-  props.onNewTodo
-
-
-
-
-
-
   const{title,description}= todo
+
 
   const handleChange=(e)=>{
     const fieldName = e.target.name
@@ -22,6 +19,7 @@ const NewTodo = (props) => {
 
   const handleSubmit=(e)=>{
     e.preventDefault()
+    props.onNewTodo(todo)
     setTodo({title:'',description:''})
   }
 

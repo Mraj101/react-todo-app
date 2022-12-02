@@ -7,6 +7,7 @@
     font-size: 20px;
     margin: 10px;
     box-shadow: inset 0px 0px 5px black;
+    position: relative;
 }
 .container-todo:hover{
     background-color: rgb(224, 134, 134);
@@ -19,4 +20,8 @@ article>div .btn{
     border: none;
     padding: 5px;
     cursor: pointer;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    right: 10px;
+    top: 50%;
 }

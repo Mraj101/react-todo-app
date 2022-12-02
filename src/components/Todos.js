@@ -8,7 +8,7 @@ const Todos = (props) => {
 
   return (
     <div className={style["container-todos"]}>
-        {props.todos.map((todo,index)=> <Todo key='index' todo={todo}/>)}
+        {props.todos.map((todo)=> <Todo key={todo.id} todo={todo.todo}/>)}
     </div>
   )
 }
