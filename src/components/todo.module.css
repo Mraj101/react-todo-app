@@ -34,3 +34,11 @@ article>div .btn{
 
 }
 
+@media screen and (max-width:650px) {
+
+    .container-todo{
+        width: 100%;
+        margin: 0;
+        
+    }
+}

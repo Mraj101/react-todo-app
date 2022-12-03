@@ -29,7 +29,7 @@
 }
 .form-container .form-group input{
     margin-left: 20px;
-    padding: 5px;
+    /* padding: 5px; */
     width: 60%;
     border-radius: 7px ;
     font-size: 20px;
@@ -59,4 +59,46 @@
 .form-container  button:enabled{
     background-color: rgb(184, 223, 44);
     box-shadow: 0px -2px 5px rgb(63, 75, 41) ;
+}
+
+@media screen and (max-width:650px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /* body{
+        width: 100vw;
+        height: 100vh;
+    } */
+    .form-container{
+        top: 24%;
+        width:80vw;
+        height: 28vh;
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .form-container .form-group input{
+        padding: 10px;
+        width: 60%;
+        padding:5px;
+        margin-left: 7px;
+        font-size: 10px;
+    }
+
+    .form-container .form-group textarea{
+        padding: 3px;
+        height: 3.8rem;
+        width: 60%;
+        font-size: 12px;
+    }
+
+    .form-container  button{
+        width: 70px;
+        font-size: 12px;
+        text-align: center;
+        right: 10px;
+        bottom: 5px;
+    }
 }
