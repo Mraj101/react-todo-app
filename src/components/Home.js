@@ -15,7 +15,9 @@ const Home = () => {
   }
 
   const removeTodo =(id)=>{
-      
+        setTodo((oldTodo)=> {
+          const filteredTodos= oldTodo.filter((todo)=> todo.id !== id )
+          return filteredTodos } )
   }
 
   return (
