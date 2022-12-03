@@ -1,22 +1,28 @@
 .container-todo{
-    background-color: rgb(218, 30, 30);
+    background-color: rgba(218, 30, 30, 0.664);
     padding: 20px;
     line-height: 1.5;
     border-radius: 20px;
-    color: rgba(0, 0, 0, 0.986);
+    color: rgba(205, 228, 4, 0.986);
     font-size: 20px;
     margin: 10px;
-    box-shadow: inset 0px 0px 5px black;
+    box-shadow: inset 0px 0px 8px black;
     position: relative;
 }
 .container-todo:hover{
-    background-color: rgb(224, 134, 134);
-    box-shadow: -1px -2px 12px rgb(228, 0, 0);
+    background-color: rgba(224, 134, 134, 0.671);
+    box-shadow: -1px -2px 12px rgba(204, 24, 24, 0.829);
+}
+h3{
+    color: rgb(45, 22, 128);
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 0.1mm;
 }
 
 article>div .btn{
     background-color: transparent;
-    color: rgb(60, 168, 18);
+    color: rgb(90, 224, 37);
     border: none;
     padding: 5px;
     cursor: pointer;
@@ -24,4 +30,7 @@ article>div .btn{
     transform: translate(-50%,-50%);
     right: 10px;
     top: 50%;
+    font-size: 15px;
+
 }
+

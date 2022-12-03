@@ -5,20 +5,20 @@ import style from './todo.module.css'
 
 
 const Todo = (props) => {
-    const {title,desc} = props.todo
+    const {title,description} = props.todo
   return (
     <article className={style["container-todo"]}>
       <div>
         <h3>
           {title}
         </h3>
-        <p>
-          {desc}
-        </p>
+        <pre>
+                 {description}
+        </pre>
       </div>
 
       <div>
-        <button className={style.btn}>
+        <button className={style.btn} >
           <i className='fa fa-trash fa-2x'></i>
         </button>
       </div>

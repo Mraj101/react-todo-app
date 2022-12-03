@@ -7,6 +7,7 @@ import style from './form.module.css'
 
 const NewTodo = (props) => {
   const[todo,setTodo]=useState({title:'',description:''})
+  const[disable,setDisable]=useState(true)
   const{title,description}= todo
 
 
@@ -15,13 +16,18 @@ const NewTodo = (props) => {
     setTodo((oldTodo)=>{
       return  {...oldTodo,[fieldName]:e.target.value}
     })
+
+    if(title.length>0 && description.length>0)setDisable(false)
   }
 
   const handleSubmit=(e)=>{
     e.preventDefault()
     props.onNewTodo(todo)
     setTodo({title:'',description:''})
+    setDisable(true)
   }
+
+
 
 
   return (
@@ -37,7 +43,7 @@ const NewTodo = (props) => {
             <textarea onChange={handleChange} type="text" id='description' name='description' 
             value={description}/>
         </div>
-        <button type='submit'>Save</button>
+        <button disabled={disable} type='submit'>Save</button>
       </form>
     </div>
   )

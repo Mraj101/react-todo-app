@@ -44,10 +44,19 @@
     padding: 10px;
     margin-left: 300px;
     border-radius: 20px;
-    background-color: rgb(235, 204, 49);
-    box-shadow: 0px 0px 5px rgba(214, 245, 78, 0.486);
+    background-color: transparent(105, 38, 160);
+    box-shadow: 0px 0px 5px rgba(46, 54, 11, 0.267);
     border: none;
     position: absolute;
     right: 20px;
-    top: 80%;
+    top: 76%;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    color: rgb(44, 32, 32);
+}
+
+.form-container  button:enabled{
+    background-color: rgb(184, 223, 44);
+    box-shadow: 0px -2px 5px rgb(63, 75, 41) ;
 }
