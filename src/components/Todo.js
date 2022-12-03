@@ -19,9 +19,9 @@ const Todo = (props) => {
         <h3>
           {title}
         </h3>
-        <pre>
+        <p>
                  {description}
-        </pre>
+        </p>
       </div>
 
       <div>

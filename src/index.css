@@ -23,3 +23,15 @@ code {
   width: 100vw;
   background-color: rgb(31, 23, 23);
 }
+h1{
+
+  text-align: center;
+  color: rgb(213, 216, 40);
+  font-size: 45px;
+}
+
+@media screen and (max-width:650px) {
+  h1{
+    font-size: 26px;
+  }
+}

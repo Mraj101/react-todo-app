@@ -8,6 +8,8 @@
     margin: 10px;
     box-shadow: inset 0px 0px 8px black;
     position: relative;
+    word-wrap: break-word;
+
 }
 .container-todo:hover{
     background-color: rgba(224, 134, 134, 0.671);
@@ -33,12 +35,30 @@ article>div .btn{
     font-size: 15px;
 
 }
+p{
+    width:93%;
+}
 
 @media screen and (max-width:650px) {
 
     .container-todo{
         width: 100%;
-        margin: 0;
-        
+        height: auto;
+        margin-bottom: 10px;
+        margin: 10px auto;
+        font-size: 12px;
+    }
+    h3{
+        font-size: 20px;
+        font-weight: 400;
+        text-decoration:wavy;
+    }
+    article>div .btn{
+        right: 3px;
+        font-size: 9px;
+        margin-left: 5px;
+    }
+    p{
+        width:85%;
     }
 }

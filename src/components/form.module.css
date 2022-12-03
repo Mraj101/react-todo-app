@@ -89,17 +89,18 @@
 
     .form-container .form-group textarea{
         padding: 3px;
-        height: 3.8rem;
+        height: 3.5rem;
         width: 60%;
         font-size: 12px;
     }
 
     .form-container  button{
         width: 70px;
+        height: 28px;
         font-size: 12px;
         text-align: center;
-        right: 10px;
-        bottom: 5px;
+        right: 18px;
+        bottom: 1px;
     }
 }
 
