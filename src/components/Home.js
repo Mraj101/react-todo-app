@@ -13,13 +13,16 @@ const Home = () => {
       return [...oldTodo, { id: uuidv4(), todo }];
     })
   }
-  console.log(todos.map((item)=> item.id))
+
+  const removeTodo =(id)=>{
+      
+  }
 
   return (
     <div>
       <NewTodo onNewTodo={newTodo} />
       <div className={`${style.container}`}>
-        <Todos todos={todos} />
+        <Todos todos={todos} onRemoveTodo={removeTodo}  />
       </div>
     </div>
   );

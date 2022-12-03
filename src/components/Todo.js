@@ -9,7 +9,7 @@ const Todo = (props) => {
     const { id } =props
 
     const handleClick=(id)=>{
-        alert(id)
+        props.onRemoveTodo(id)
     }
 
 
