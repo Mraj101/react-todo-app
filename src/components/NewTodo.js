@@ -43,7 +43,7 @@ const NewTodo = (props) => {
             <textarea onChange={handleChange} type="text" id='description' name='description' 
             value={description}/>
         </div>
-        <button disabled={disable} type='submit'>Save</button>
+        <button disabled={disable} type='submit'>SaveTodo</button>
       </form>
     </div>
   )

@@ -6,6 +6,13 @@ import style from './todo.module.css'
 
 const Todo = (props) => {
     const {title,description} = props.todo
+    const { id } =props
+
+    const handleClick=(id)=>{
+        alert(id)
+    }
+
+
   return (
     <article className={style["container-todo"]}>
       <div>
@@ -18,7 +25,7 @@ const Todo = (props) => {
       </div>
 
       <div>
-        <button className={style.btn} >
+        <button onClick={ () => {handleClick(id)} } className={style.btn} >
           <i className='fa fa-trash fa-2x'></i>
         </button>
       </div>
